@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#DEDEDE"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="56dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+    <!--CE-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_CE"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="CE"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt7"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_C"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_CE"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints,NotSibling">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--C-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_C"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="C"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt8"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_BS"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_CE"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.button.MaterialButton>
+    <!--BS-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_BS"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="BS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt9"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_DIV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_C"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--/-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_DIV"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_BS"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--7-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt7"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt4"
+        app:layout_constraintEnd_toStartOf="@+id/bnt8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_CE"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--8-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt8"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt5"
+        app:layout_constraintEnd_toStartOf="@+id/bnt9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt7"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_C"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--9-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt9"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt6"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_X"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt8"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_BS"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--x-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_X"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="X"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_SUB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt9"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_DIV"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--4-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt4"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt1"
+        app:layout_constraintEnd_toStartOf="@+id/bnt5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt7"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--5-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt5"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt2"
+        app:layout_constraintEnd_toStartOf="@+id/bnt6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt4"
+        app:layout_constraintTop_toBottomOf="@+id/bnt8"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--6-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt6"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt3"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_SUB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt5"
+        app:layout_constraintTop_toBottomOf="@+id/bnt9"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- - -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_SUB"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/bnt_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt6"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_X"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- 1 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt1"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_ab"
+        app:layout_constraintEnd_toStartOf="@+id/bnt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt4"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- 2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt2"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="2"
+        android:textColor="@color/black"
+
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt0"
+        app:layout_constraintEnd_toStartOf="@+id/bnt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt1"
+        app:layout_constraintTop_toBottomOf="@+id/bnt5"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--3-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt3"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="3"
+        android:textColor="@color/black"
+
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_dot"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_plus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt2"
+        app:layout_constraintTop_toBottomOf="@+id/bnt6"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--+-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_plus"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="+"
+        android:textColor="@color/black"
+
+        android:textSize="25dp"
+
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt3"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_SUB"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!--+/- -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_ab"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#dedede"
+        android:text="+/-"
+        android:textColor="@color/black"
+
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bnt0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt1"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- 0 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt0"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#efefef"
+        android:text="0"
+
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_dot"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_ab"
+        app:layout_constraintTop_toBottomOf="@+id/bnt2"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- . -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_dot"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#dedede"
+        android:text="."
+
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_equal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt0"
+        app:layout_constraintTop_toBottomOf="@+id/bnt3"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+    <!-- = -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_equal"
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#dedede"
+        android:text="="
+
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bnt_dot"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_plus"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.button.MaterialButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
